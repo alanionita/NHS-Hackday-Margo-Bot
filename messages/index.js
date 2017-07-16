@@ -1,7 +1,21 @@
-exports.appologies = [
+exports.tutorial = [
+    'Hello, I\'m Margo, your digital companion.',
+    'Is there something you want to talk about? (Yes or No)'
+];
+
+exports.yes = [
+    'Okay. What would you like to talk about?'
+];
+
+exports.no = [
+    'That\'s too bad. Maybe next time!'
+];
+
+exports.apologies = [
     'I\'m sorry about this.',
     'But it seems like I couldn\'t understand your message.',
-    'Could you try reformulating it?'];
+    'Could you try again?'
+];
 
 exports.thanksReply = ['🙌 ',
     'I\'m glad you liked what you found',
@@ -10,11 +24,6 @@ exports.thanksReply = ['🙌 ',
     'Watsi.com',
     'they are a cool bunch',
     '🤗'
-];
-
-exports.tutorial = [
-    'Hello, I\'m Margo, your digital companion.',
-    'Is there something you want to talk about?'
 ];
 
 exports.commands = [
