@@ -41,7 +41,57 @@ let myIncomingMiddlewareController = (bot, update) => {
         bot.sendTextCascadeTo(messages.no, update.sender.id);
     }
     
-     else {
+    else if (update.message.text === 'sad' ||
+             update.message.text === 'Sad' ||
+             update.message.text === 'unhappy' ||
+             update.message.text === 'Unhappy' ||
+             update.message.text === 'angry' ||
+             update.message.text === 'Angry' ||
+             update.message.text === 'depressed' ||
+             update.message.text === 'Depressed' ||
+             update.message.text === 'crap' ||
+             update.message.text === 'Crap' ||
+             update.message.text === 'crappy' ||
+             update.message.text === 'Crappy' ||
+             update.message.text === 'tired' ||
+             update.message.text === 'Tired' ||
+             update.message.text === 'humiliated' ||
+             update.message.text === 'Humiliated' ||
+             update.message.text === 'rejected' ||
+             update.message.text === 'Rejected' ||
+             update.message.text === 'upset' ||
+             update.message.text === 'Upset'
+            ) {
+        bot.sendTextCascadeTo(messages.negative, update.sender.id);
+    }
+    
+    else if (update.message.text === 'happy' ||
+             update.message.text === 'Happy' ||
+             update.message.text === 'joyful' ||
+             update.message.text === 'Joyful' ||
+             update.message.text === 'hopeful' ||
+             update.message.text === 'Hopeful' ||
+             update.message.text === 'cheerful' ||
+             update.message.text === 'Cheerful' ||
+             update.message.text === 'euphoric' ||
+             update.message.text === 'Euphoric' ||
+             update.message.text === 'satisfied' ||
+             update.message.text === 'Satisfied' ||
+             update.message.text === 'inspired' ||
+             update.message.text === 'Inspired' ||
+             update.message.text === 'energetic' ||
+             update.message.text === 'Energetic' ||
+             update.message.text === 'positive' ||
+             update.message.text === 'Positive' ||
+             update.message.text === 'lucky' ||
+             update.message.text === 'Lucky' ||
+             update.message.text === 'awesome' ||
+             update.message.text === 'Awesome'
+            ) {
+        bot.sendTextCascadeTo(messages.positive, update.sender.id);
+    }
+    
+    else {
         bot.sendTextCascadeTo(messages.apologies, update.sender.id);
     }
 };
