@@ -1,5 +1,5 @@
 exports.tutorial = [
-    'Hello, I\'m Margo, your digital companion.',
+    'Hello, I\'m Margo, your digital companion. 🐘',
     'Is there something you want to talk about? (Yes or No)'
 ];
 
@@ -13,12 +13,12 @@ exports.no = [
 ]; // could switch to a different one
 
 exports.negative = [
-    'I\'m sorry to hear that. Can you tell me why?',
+    'I\'m sorry to hear that. 😢 Can you tell me why?',
     'And most importantly, did you learn from this experience?'
 ];
 
 exports.positive = [
-    'That\'s awesome. Can you tell me more?', 
+    'That\'s awesome. Can you tell me more?☺️', 
     'Also, what did you learn from the experience?'
 ];
 
@@ -28,11 +28,11 @@ exports.reflection = [
 ];
 
 exports.reflectionyes = [
-    'I\'m listening'
+    'I\'m listening 👂'
 ];
 
 exports.reflectionno = [
-    'Okay. See you next time!'
+    'Okay. See you next time!😁'
 ];
 
 exports.apologies = [
