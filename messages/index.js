@@ -1,9 +1,11 @@
 exports.tutorial = [
+    '🤗',
     'Hello, I\'m Margo, your digital companion. 🐘',
     'Is there something you want to talk about? (Yes or No)'
 ];
 
 exports.yes = [
+    '👍',
     'Okay. In one word, could you tell me how you\'re feeling?'
 ];
 
@@ -18,7 +20,8 @@ exports.negative = [
 ];
 
 exports.positive = [
-    'That\'s awesome. Can you tell me more?☺️', 
+    '😀',
+    'That\'s awesome. Can you tell me more?', 
     'Also, what did you learn from the experience?'
 ];
 
@@ -28,11 +31,13 @@ exports.reflection = [
 ];
 
 exports.reflectionyes = [
-    'I\'m listening 👂'
+    'I\'m listening',
+    '👂'
 ];
 
 exports.reflectionno = [
-    'Okay. See you next time!😁'
+    'Okay. See you next time!',
+    '😁'
 ];
 
 exports.apologies = [
