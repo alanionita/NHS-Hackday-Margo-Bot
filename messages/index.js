@@ -8,26 +8,32 @@ exports.yes = [
 ];
 
 exports.no = [
-    'That\'s too bad. Maybe next time!'
-];
+    'So why did you message me?',
+    'Goodbye.'
+]; // could switch to a different one
 
 exports.negative = [
-    'I\'m sorry to hear that. Can you tell me why?'
+    'I\'m sorry to hear that. Can you tell me why?',
+    'And most importantly, did you learn from this experience?'
 ];
 
 exports.positive = [
-    'That\'s awesome. Can you tell me more?'
+    'That\'s awesome. Can you tell me more?', 
+    'Also, what did you learn from the experience?'
 ];
 
 exports.reflection = [
     'Thank you for that.', 
-    'Can you tell me what you learnt from this experience? (Y or N)'
+    'Is there anything else you want to talk about? (Y or N)'
 ];
 
 exports.reflectionyes = [
     'I\'m listening'
 ];
 
+exports.reflectionno = [
+    'Okay. See you next time!'
+];
 
 exports.apologies = [
     'I\'m sorry about this.',

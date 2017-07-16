@@ -25,6 +25,7 @@ let myIncomingMiddlewareController = (bot, update) => {
         update.message.text === 'hey') {
         bot.sendTextCascadeTo(messages.tutorial, update.sender.id);
     }
+    
     else if (update.message.text === 'yes' ||
              update.message.text === 'Yes' ||
              update.message.text === 'YES' ||
@@ -102,7 +103,7 @@ let myIncomingMiddlewareController = (bot, update) => {
     
     else if (update.message.text === 'N' )
     {
-        bot.sendTextCascadeTo(messages.no, update.sender.id);
+        bot.sendTextCascadeTo(messages.reflectionno, update.sender.id);
     }
     
     else {
