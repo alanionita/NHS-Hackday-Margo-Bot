@@ -5,6 +5,7 @@ const path = require('path');
 const Botmaster = require('botmaster');
 const TwitterBot = require('botmaster-twitter-dm');
 const twitterSettings = require(path.resolve(__dirname, 'config'));
+// where to find the config file which gives the access details to plug into the API
 
 const botmaster = new Botmaster();
 const twitterBot = new TwitterBot(twitterSettings);
@@ -23,6 +24,25 @@ let myIncomingMiddlewareController = (bot, update) => {
         update.message.text === 'Hey' ||
         update.message.text === 'hey') {
         bot.sendTextCascadeTo(messages.tutorial, update.sender.id);
+    }
+    else if (update.message.text === 'yes' ||
+             update.message.text === 'Yes' ||
+             update.message.text === 'YES' ||
+             update.message.text === 'y') {
+        bot.sendTextCascadeTo(messages.yes, update.sender.id);
+    }
+    
+    else if (update.message.text === 'no' ||
+             update.message.text === 'No' ||
+             update.message.text === 'NO' ||
+             update.message.text === 'n' ||
+             update.message.text === 'nah'
+            ) {
+        bot.sendTextCascadeTo(messages.no, update.sender.id);
+    }
+    
+     else {
+        bot.sendTextCascadeTo(messages.apologies, update.sender.id);
     }
 };
 
