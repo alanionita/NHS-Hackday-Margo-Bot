@@ -60,7 +60,11 @@ let myIncomingMiddlewareController = (bot, update) => {
              update.message.text === 'rejected' ||
              update.message.text === 'Rejected' ||
              update.message.text === 'upset' ||
-             update.message.text === 'Upset'
+             update.message.text === 'Upset' ||
+             update.message.text === 'anxious' ||
+             update.message.text === 'Anxious' ||
+             update.message.text === 'scared' ||
+             update.message.text === 'Scared'
             ) {
         bot.sendTextCascadeTo(messages.negative, update.sender.id);
     }
@@ -90,10 +94,21 @@ let myIncomingMiddlewareController = (bot, update) => {
             ) {
         bot.sendTextCascadeTo(messages.positive, update.sender.id);
     }
+
+    else if (update.message.text === 'Y' )
+    {
+        bot.sendTextCascadeTo(messages.reflectionyes, update.sender.id);
+    }
+    
+    else if (update.message.text === 'N' )
+    {
+        bot.sendTextCascadeTo(messages.no, update.sender.id);
+    }
     
     else {
-        bot.sendTextCascadeTo(messages.apologies, update.sender.id);
+        bot.sendTextCascadeTo(messages.reflection, update.sender.id);
     }
+    
 };
 
 botmaster.use({

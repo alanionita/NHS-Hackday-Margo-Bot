@@ -18,6 +18,17 @@ exports.negative = [
 exports.positive = [
     'That\'s awesome. Can you tell me more?'
 ];
+
+exports.reflection = [
+    'Thank you for that.', 
+    'Can you tell me what you learnt from this experience? (Y or N)'
+];
+
+exports.reflectionyes = [
+    'I\'m listening'
+];
+
+
 exports.apologies = [
     'I\'m sorry about this.',
     'But it seems like I couldn\'t understand your message.',
